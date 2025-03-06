@@ -12,6 +12,14 @@ p{
     object-fit: contain;
 }
 
+#imgGlobal{
+    filter: grayscale(50%);
+}
+
+#imgGlobal:hover{
+    filter: sepia(0);
+}
+
 .imgDesktop{
     width: 40%;
     object-fit: contain;
@@ -38,6 +46,10 @@ p{
 form{
     margin: 20px;
     width: 50%;
+}
+
+svg{
+    margin: 15px;
 }
 
 @media all and (min-width:426px){
