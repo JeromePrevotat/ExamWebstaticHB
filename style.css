@@ -1,0 +1,133 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    margin: 15px;
+}
+
+p{
+    margin: 10px;
+}
+
+#logoImg{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#rememberFromage{
+    background-image: url("./img/global.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    aspect-ratio: 16/9;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        svg{
+            opacity: 0;
+        }
+
+        &:hover svg{
+            opacity: 1;
+            color: white;
+        }
+    }
+}
+
+#rememberFromage:hover{
+    filter: grayscale(80%);
+    
+}
+
+#imgGlobal:hover{
+    filter: grayscale(80%);
+}
+
+.imgDesktop{
+    width: 40%;
+    object-fit: contain;
+}
+
+.mirrorContainer{
+    width: 60%;
+    margin: 15px;
+}
+
+/* SLIDER */
+#slider{
+    justify-content: center;
+}
+
+.sliderContainer{
+    width: 80%;
+}
+
+.sliderImg{
+    height: 150px;
+    width: auto;
+}
+
+/* GRID LAYOUT */
+#gridLayout{
+    justify-content: center;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 30px;
+    width: 80%;
+}
+
+.gridCell{
+    padding: 10px;
+    text-align: center;
+    border: solid gray 1px;
+}
+
+.formContainer{
+    width: 100%;
+}
+
+form{
+    margin: 20px 20px 0px 20px;
+    width: 50%;
+}
+
+#btnSubmit{
+    width: 150px;
+}
+
+svg{
+    margin: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    border: solid black 1px;
+}
+
+@media all and (min-width:426px){
+    .sliderImg{
+        filter: sepia(1);
+    }
+    .sliderImg:hover{
+        filter: sepia(0);
+    }
+    .mirrorContainer{
+        /*order: 1;*/
+    }    
+}
