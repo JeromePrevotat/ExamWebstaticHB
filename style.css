@@ -13,7 +13,7 @@ p{
 }
 
 #imgGlobal{
-    filter: grayscale(50%);
+    filter: grayscale(80%);
 }
 
 #imgGlobal:hover{
@@ -30,6 +30,12 @@ p{
     margin: 15px;
 }
 
+/* SLIDER */
+#slider{
+    display: flex;
+    justify-content: center;
+}
+
 .sliderContainer{
     width: 80%;
 }
@@ -37,6 +43,26 @@ p{
 .sliderImg{
     height: 150px;
     width: auto;
+}
+
+/* GRID LAYOUT */
+#gridLayout{
+    display:flex;
+    justify-content: center;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 30px;
+    width: 80%;
+}
+
+.gridCell{
+    padding: 10px;
+    text-align: center;
+    border: solid gray 1px;
 }
 
 .formContainer{
