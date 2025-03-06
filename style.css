@@ -22,12 +22,37 @@ p{
     object-fit: contain;
 }
 
-#imgGlobal{
+#rememberFromage{
+    background-image: url("./img/global.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    aspect-ratio: 16/9;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        svg{
+            opacity: 0;
+        }
+
+        &:hover svg{
+            opacity: 1;
+            color: white;
+        }
+    }
+}
+
+#rememberFromage:hover{
     filter: grayscale(80%);
+    
 }
 
 #imgGlobal:hover{
-    filter: sepia(0);
+    filter: grayscale(80%);
 }
 
 .imgDesktop{
@@ -101,5 +126,8 @@ footer{
     }
     .sliderImg:hover{
         filter: sepia(0);
+    }
+    .mirrorContainer{
+        /*order: 1;*/
     }    
 }
