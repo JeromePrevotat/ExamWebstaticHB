@@ -63,9 +63,17 @@
         <div class="d-flex flex-wrap justify-content-center">
             <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi eveniet, in pariatur illum ipsa
-                cupiditate quam ea asperiores exercitationem aspernatur maxime consectetur voluptatem quis magni quaerat
+                cupiditate quam ea asperiores exercitationem aspernatur maxime consectetur voluptatem quis magni
+                quaerat
                 laudantium error nobis?</p>
             <!--SLIDER-->
+            <div class="d-flex flex-nowrap">
+                <img class="sliderImg" src="./img/slider/1.png" alt="">
+                <img class="sliderImg" src="./img/slider/2.png" alt="">
+                <img class="sliderImg" src="./img/slider/3.png" alt="">
+                <img class="sliderImg" src="./img/slider/4.png" alt="">
+                <img class="sliderImg" src="./img/slider/5.png" alt="">
+            </div>
         </div>
     </section>
     <section id="gridlayout">
@@ -141,23 +149,30 @@
             </div>
     </section>
     <section id="contactForm">
-        <div class="d-flex">
+        <div class="d-flex flex-wrap flex-column align-items-center justify-content-center formContainer">
             <h1>Nous vous rappellerons</h1>
             <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" placeholder="Nom" aria-label="inputName">
+                    </div>
+                    <div class="col">
+                        <label for="inputMail" class="form-label">Email:</label>
+                        <input type="mail" class="form-control" placeholder="Mail" aria-label="inputMail">
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkboxForm">
+                            <label class="form-check-label" for="checkboxForm">Lorem ipsum dolor sit amet
+                                consectetur.</label>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
