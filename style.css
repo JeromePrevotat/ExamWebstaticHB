@@ -1,3 +1,13 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 h1{
     margin: 15px;
 }
@@ -32,7 +42,6 @@ p{
 
 /* SLIDER */
 #slider{
-    display: flex;
     justify-content: center;
 }
 
@@ -47,7 +56,6 @@ p{
 
 /* GRID LAYOUT */
 #gridLayout{
-    display:flex;
     justify-content: center;
 }
 
@@ -70,12 +78,21 @@ p{
 }
 
 form{
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     width: 50%;
+}
+
+#btnSubmit{
+    width: 150px;
 }
 
 svg{
     margin: 15px;
+}
+
+footer{
+    margin-top: 15px;
+    border: solid black 1px;
 }
 
 @media all and (min-width:426px){
